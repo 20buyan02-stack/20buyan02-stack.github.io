@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Костюм «Легионер»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Сигнальная одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/113302.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/113302.jpg" class="sel" onclick="setMain(this,'../photos_all/113302.jpg')"></div></div>
+<div><h1>Костюм «Легионер»</h1><div class="art" id="vartitle">Арт. 113302 — Костюм кор. куртка, п/к т.серый с красным и СОП (ЧЗ)</div>
+<div class="colors"><div class="cbtn sel" onclick="show(0)"><img src="../photos_all/113302.jpg" loading="lazy"><span class="l">Костюм кор. куртка, п/к т.серый с красным и СОП (ЧЗ)</span></div><div class="cbtn" onclick="show(1)"><span class="l">Костюм куртка, полукомбинезон синий с васильковым и СОП 50мм (ЧЗ)</span></div><div class="cbtn" onclick="show(2)"><span class="l">Костюм куртка, полукомбинезон синий с серым и СОП 50мм (ЧЗ)</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/149374.jpg" loading="lazy"><span class="l">Костюм летн, куртка, кор., п/к. т.серый со светло-серым и СОП 50мм</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/156654.jpg" loading="lazy"><span class="l">Костюм летн. куртка кор., п/к синий с лимонным и СОП 50 мм Тк. Гретта (ЧЗ)</span></div><div class="cbtn" onclick="show(5)"><img src="../photos_all/152162.jpg" loading="lazy"><span class="l">Костюм летн. куртка кор., п/к.т.-синий с черным с оранжевой отделкой и СОП 50 мм(ЧЗ)</span></div><div class="cbtn" onclick="show(6)"><img src="../photos_all/151978.jpg" loading="lazy"><span class="l">Костюм летн. куртка, кор., п/к. васильковый с синим и СОП 50 мм (ЧЗ)</span></div><div class="cbtn" onclick="show(7)"><img src="../photos_all/141695.jpg" loading="lazy"><span class="l">Костюм летний, куртка, брюки зеленый с лимонным и СОП 50мм (ЧЗ)</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/156049.jpg" loading="lazy"><span class="l">Костюм летний, куртка, п/к лимонный с т.синим и СОП 50 мм тк.Гретта (ЧЗ)</span></div><div class="cbtn" onclick="show(9)"><img src="../photos_all/156036.jpg" loading="lazy"><span class="l">Костюм летний, куртка, п/к оранжевый с т.синим и СОП 50 мм тк.Гретта (ЧЗ)</span></div><div class="cbtn" onclick="show(10)"><img src="../photos_all/141682.jpg" loading="lazy"><span class="l">Костюм летний, куртка, п/к синий с песочным и СОП 50мм (ЧЗ)</span></div><div class="cbtn" onclick="show(11)"><span class="l">Костюм : летн. кор. куртка, п/к тем.-синий с васильковым и СОП (ЧЗ)</span></div><div class="cbtn" onclick="show(12)"><span class="l">Костюм : летн. куртка, п/к песочный с черным и СОП 50мм (ЧЗ)</span></div><div class="cbtn" onclick="show(13)"><span class="l">Костюм : лето куртка, брюки синий с красным и СОП 50 мм (ЧЗ) (распродажа)</span></div><div class="cbtn" onclick="show(14)"><span class="l">Костюм : лето куртка, брюки т.серый с красным и СОП 50 мм. (ЧЗ)</span></div></div>
+<div class="desc">Куртка укороченная, прямого силуэта, с отложным воротником, с центральной застёжкой на 5 петель и пуговиц, с притачным поясом с эластичной лентой по боковым швам, накладными верхними и нижними карманами, рукавами с манжетами на пуговицах и с налокотниками. В куртке предусмотрена лента светоотражающая 50 мм.
+
+Полукомбинезон с застёжкой гульфика на тесьму «молния», застёжкой в правом боковом шве на 3 петли и пуговицы, отрезной грудкой, верхним и нижними боковыми карманами, с наколенниками, с эластичной лентой по спинке. На нижних частях под наколенниками настрочена лента светоотражающая 50 мм.</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr class="sel"><td>113302</td><td>Костюм кор. куртка, п/к т.серый с красным и СОП (ЧЗ)</td></tr><tr><td>4395</td><td>Костюм куртка, полукомбинезон синий с васильковым и СОП 50мм (ЧЗ)</td></tr><tr><td>4396</td><td>Костюм куртка, полукомбинезон синий с серым и СОП 50мм (ЧЗ)</td></tr><tr><td>149374</td><td>Костюм летн, куртка, кор., п/к. т.серый со светло-серым и СОП 50мм</td></tr><tr><td>156654</td><td>Костюм летн. куртка кор., п/к синий с лимонным и СОП 50 мм Тк. Гретта (ЧЗ)</td></tr><tr><td>152162</td><td>Костюм летн. куртка кор., п/к.т.-синий с черным с оранжевой отделкой и СОП 50 мм(ЧЗ)</td></tr><tr><td>151978</td><td>Костюм летн. куртка, кор., п/к. васильковый с синим и СОП 50 мм (ЧЗ)</td></tr><tr><td>141695</td><td>Костюм летний, куртка, брюки зеленый с лимонным и СОП 50мм (ЧЗ)</td></tr><tr><td>156049</td><td>Костюм летний, куртка, п/к лимонный с т.синим и СОП 50 мм тк.Гретта (ЧЗ)</td></tr><tr><td>156036</td><td>Костюм летний, куртка, п/к оранжевый с т.синим и СОП 50 мм тк.Гретта (ЧЗ)</td></tr><tr><td>141682</td><td>Костюм летний, куртка, п/к синий с песочным и СОП 50мм (ЧЗ)</td></tr><tr><td>2108</td><td>Костюм : летн. кор. куртка, п/к тем.-синий с васильковым и СОП (ЧЗ)</td></tr><tr><td>4292</td><td>Костюм : летн. куртка, п/к песочный с черным и СОП 50мм (ЧЗ)</td></tr><tr><td>2208</td><td>Костюм : лето куртка, брюки синий с красным и СОП 50 мм (ЧЗ) (распродажа)</td></tr><tr><td>2218</td><td>Костюм : лето куртка, брюки т.серый с красным и СОП 50 мм. (ЧЗ)</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "113302", "var_": "Костюм кор. куртка, п/к т.серый с красным и СОП (ЧЗ)", "imgs": ["113302.jpg"]}, {"art": "4395", "var_": "Костюм куртка, полукомбинезон синий с васильковым и СОП 50мм (ЧЗ)", "imgs": []}, {"art": "4396", "var_": "Костюм куртка, полукомбинезон синий с серым и СОП 50мм (ЧЗ)", "imgs": []}, {"art": "149374", "var_": "Костюм летн, куртка, кор., п/к. т.серый со светло-серым и СОП 50мм", "imgs": ["149374.jpg"]}, {"art": "156654", "var_": "Костюм летн. куртка кор., п/к синий с лимонным и СОП 50 мм Тк. Гретта (ЧЗ)", "imgs": ["156654.jpg"]}, {"art": "152162", "var_": "Костюм летн. куртка кор., п/к.т.-синий с черным с оранжевой отделкой и СОП 50 мм(ЧЗ)", "imgs": ["152162.jpg"]}, {"art": "151978", "var_": "Костюм летн. куртка, кор., п/к. васильковый с синим и СОП 50 мм (ЧЗ)", "imgs": ["151978.jpg"]}, {"art": "141695", "var_": "Костюм летний, куртка, брюки зеленый с лимонным и СОП 50мм (ЧЗ)", "imgs": ["141695.jpg", "141695-1.jpg", "141695-2.jpg", "141695-3.jpg", "141695-4.jpg", "141695-5.jpg", "141695-6.jpg"]}, {"art": "156049", "var_": "Костюм летний, куртка, п/к лимонный с т.синим и СОП 50 мм тк.Гретта (ЧЗ)", "imgs": ["156049.jpg"]}, {"art": "156036", "var_": "Костюм летний, куртка, п/к оранжевый с т.синим и СОП 50 мм тк.Гретта (ЧЗ)", "imgs": ["156036.jpg"]}, {"art": "141682", "var_": "Костюм летний, куртка, п/к синий с песочным и СОП 50мм (ЧЗ)", "imgs": ["141682.jpg", "141682-1.jpg", "141682-2.jpg", "141682-3.jpg", "141682-4.jpg"]}, {"art": "2108", "var_": "Костюм : летн. кор. куртка, п/к тем.-синий с васильковым и СОП (ЧЗ)", "imgs": []}, {"art": "4292", "var_": "Костюм : летн. куртка, п/к песочный с черным и СОП 50мм (ЧЗ)", "imgs": []}, {"art": "2208", "var_": "Костюм : лето куртка, брюки синий с красным и СОП 50 мм (ЧЗ) (распродажа)", "imgs": []}, {"art": "2218", "var_": "Костюм : лето куртка, брюки т.серый с красным и СОП 50 мм. (ЧЗ)", "imgs": []}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

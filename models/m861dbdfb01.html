@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Ботинки «Сириус-Титан»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Обувь</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/140013.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/140013.jpg" class="sel" onclick="setMain(this,'../photos_all/140013.jpg')"><img src="../photos_all/140013-1.jpg" class="" onclick="setMain(this,'../photos_all/140013-1.jpg')"><img src="../photos_all/140013-2.jpg" class="" onclick="setMain(this,'../photos_all/140013-2.jpg')"><img src="../photos_all/140013-3.jpg" class="" onclick="setMain(this,'../photos_all/140013-3.jpg')"></div></div>
+<div><h1>Ботинки «Сириус-Титан»</h1><div class="art" id="vartitle">Арт. 140013 — Ботинки , кожа, МП МС, Нитрил</div>
+<div class="colors"><div class="cbtn sel" onclick="show(0)"><img src="../photos_all/140013.jpg" loading="lazy"><span class="l">Ботинки , кожа, МП МС, Нитрил</span></div><div class="cbtn" onclick="show(1)"><img src="../photos_all/140082.jpg" loading="lazy"><span class="l">Ботинки , кожа, МП МС, иск. мех, Нитрил</span></div><div class="cbtn" onclick="show(2)"><img src="../photos_all/122048.jpg" loading="lazy"><span class="l">Ботинки , кожа, МП, Нитрил</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/122063.jpg" loading="lazy"><span class="l">Ботинки , кожа, МП, иск. мех, Нитрил</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/122492.jpg" loading="lazy"><span class="l">Ботинки , кожа, Нитрил</span></div><div class="cbtn" onclick="show(5)"><img src="../photos_all/140031.jpg" loading="lazy"><span class="l">Ботинки , кожа, ПКП МС, Нитрил</span></div><div class="cbtn" onclick="show(6)"><img src="../photos_all/140100.jpg" loading="lazy"><span class="l">Ботинки , кожа, ПКП МС, иск. мех, Нитрил</span></div><div class="cbtn" onclick="show(7)"><img src="../photos_all/126504.jpg" loading="lazy"><span class="l">Ботинки , кожа, ПКП, Нитрил</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/130808.jpg" loading="lazy"><span class="l">Ботинки , кожа, ПКП, иск. мех, Нитрил</span></div><div class="cbtn" onclick="show(9)"><img src="../photos_all/122507.jpg" loading="lazy"><span class="l">Ботинки , кожа, иск. мех, Нитрил</span></div><div class="cbtn" onclick="show(10)"><img src="../photos_all/152874.jpg" loading="lazy"><span class="l">Ботинки сварщика , кожа, МП МС, Нитрил</span></div><div class="cbtn" onclick="show(11)"><img src="../photos_all/142840.jpg" loading="lazy"><span class="l">Ботинки сварщика , кожа, ПКП, Нитрил</span></div><div class="cbtn" onclick="show(12)"><img src="../photos_all/142823.jpg" loading="lazy"><span class="l">Ботинки сварщика зимние , кожа, ПКП, иск.мех, Нитрил</span></div></div>
+<div class="desc">Верх обуви из кожи со специальным покрытием для защиты от ОПЗ, МВ.
+Важное достоинство этой обуви – двойной (комбинированный) метод крепления, при котором к химическому соединению деталей добавляется механический. Это придает дополнительную прочность соединению верха обуви и подошвы, улучшает эксплуатационные свойства и прочность крепления.
+Рабочая обувь клеепрошивного метода крепления универсальна в назначении для различных отраслей промышленности, а также для повседневной носки.
+Нитрил — синтетический каучук (резина). Характеризуется отличной устойчивостью к воздействию высоких температур (пр</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr class="sel"><td>140013</td><td>Ботинки , кожа, МП МС, Нитрил</td></tr><tr><td>140082</td><td>Ботинки , кожа, МП МС, иск. мех, Нитрил</td></tr><tr><td>122048</td><td>Ботинки , кожа, МП, Нитрил</td></tr><tr><td>122063</td><td>Ботинки , кожа, МП, иск. мех, Нитрил</td></tr><tr><td>122492</td><td>Ботинки , кожа, Нитрил</td></tr><tr><td>140031</td><td>Ботинки , кожа, ПКП МС, Нитрил</td></tr><tr><td>140100</td><td>Ботинки , кожа, ПКП МС, иск. мех, Нитрил</td></tr><tr><td>126504</td><td>Ботинки , кожа, ПКП, Нитрил</td></tr><tr><td>130808</td><td>Ботинки , кожа, ПКП, иск. мех, Нитрил</td></tr><tr><td>122507</td><td>Ботинки , кожа, иск. мех, Нитрил</td></tr><tr><td>152874</td><td>Ботинки сварщика , кожа, МП МС, Нитрил</td></tr><tr><td>142840</td><td>Ботинки сварщика , кожа, ПКП, Нитрил</td></tr><tr><td>142823</td><td>Ботинки сварщика зимние , кожа, ПКП, иск.мех, Нитрил</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "140013", "var_": "Ботинки , кожа, МП МС, Нитрил", "imgs": ["140013.jpg", "140013-1.jpg", "140013-2.jpg", "140013-3.jpg"]}, {"art": "140082", "var_": "Ботинки , кожа, МП МС, иск. мех, Нитрил", "imgs": ["140082.jpg", "140082-1.jpg", "140082-2.jpg"]}, {"art": "122048", "var_": "Ботинки , кожа, МП, Нитрил", "imgs": ["122048.jpg", "122048-1.jpg", "122048-2.jpg", "122048-3.jpg"]}, {"art": "122063", "var_": "Ботинки , кожа, МП, иск. мех, Нитрил", "imgs": ["122063.jpg", "122063-1.jpg", "122063-2.jpg"]}, {"art": "122492", "var_": "Ботинки , кожа, Нитрил", "imgs": ["122492.jpg", "122492-1.jpg", "122492-2.jpg", "122492-3.jpg"]}, {"art": "140031", "var_": "Ботинки , кожа, ПКП МС, Нитрил", "imgs": ["140031.jpg", "140031-1.jpg", "140031-2.jpg", "140031-3.jpg"]}, {"art": "140100", "var_": "Ботинки , кожа, ПКП МС, иск. мех, Нитрил", "imgs": ["140100.jpg", "140100-1.jpg", "140100-2.jpg"]}, {"art": "126504", "var_": "Ботинки , кожа, ПКП, Нитрил", "imgs": ["126504.jpg", "126504-1.jpg", "126504-2.jpg", "126504-3.jpg"]}, {"art": "130808", "var_": "Ботинки , кожа, ПКП, иск. мех, Нитрил", "imgs": ["130808.jpg", "130808-1.jpg", "130808-2.jpg"]}, {"art": "122507", "var_": "Ботинки , кожа, иск. мех, Нитрил", "imgs": ["122507.jpg", "122507-1.jpg", "122507-2.jpg"]}, {"art": "152874", "var_": "Ботинки сварщика , кожа, МП МС, Нитрил", "imgs": ["152874.jpg", "152874-1.jpg", "152874-2.jpg", "152874-3.jpg", "152874-4.jpg"]}, {"art": "142840", "var_": "Ботинки сварщика , кожа, ПКП, Нитрил", "imgs": ["142840.jpg", "142840-1.jpg", "142840-2.jpg", "142840-3.jpg", "142840-4.jpg"]}, {"art": "142823", "var_": "Ботинки сварщика зимние , кожа, ПКП, иск.мех, Нитрил", "imgs": ["142823.jpg", "142823-1.jpg", "142823-2.jpg", "142823-3.jpg", "142823-4.jpg"]}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

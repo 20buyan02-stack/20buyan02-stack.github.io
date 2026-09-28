@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Куртка «Бригадир»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Сигнальная одежда • Зимняя одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/139151.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/139151.jpg" class="sel" onclick="setMain(this,'../photos_all/139151.jpg')"><img src="../photos_all/139151-1.jpg" class="" onclick="setMain(this,'../photos_all/139151-1.jpg')"><img src="../photos_all/139151-2.jpg" class="" onclick="setMain(this,'../photos_all/139151-2.jpg')"><img src="../photos_all/139151-3.jpg" class="" onclick="setMain(this,'../photos_all/139151-3.jpg')"></div></div>
+<div><h1>Куртка «Бригадир»</h1><div class="art" id="vartitle">Арт. 139151 — Куртка зим. муж. с капюшоном т-серая с красным тк.Оксфорд (ЧЗ)</div>
+<div class="colors"><div class="cbtn sel" onclick="show(0)"><img src="../photos_all/139151.jpg" loading="lazy"><span class="l">Куртка зим. муж. с капюшоном т-серая с красным тк.Оксфорд (ЧЗ)</span></div><div class="cbtn" onclick="show(1)"><img src="../photos_all/116213.jpg" loading="lazy"><span class="l">Куртка зим. муж. с капюшоном т-синяя с неоновым (ЧЗ) тк. Оксфорд (распродажа)</span></div><div class="cbtn" onclick="show(2)"><img src="../photos_all/155140.jpg" loading="lazy"><span class="l">Куртка зим. муж. с капюшоном хаки с черным и СОП 50 мм. тк. Оксфорд (ЧЗ)</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/153813.jpg" loading="lazy"><span class="l">Куртка зим. муж. с мех. ворот. и кап. т-син. с СОП 50мм (600 гр) тк.Оксфорд (ЧЗ)</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/158724.jpg" loading="lazy"><span class="l">Куртка зим. муж. с мех. ворот. и капюш. т-син. с СОП 50мм тк.(600 гр) Гретта (ЧЗ)</span></div><div class="cbtn" onclick="show(5)"><span class="l">Куртка мужская с мех. ворот. синий с васильк. и СОП (ЧЗ) тк. Гретта</span></div><div class="cbtn" onclick="show(6)"><img src="../photos_all/139205.jpg" loading="lazy"><span class="l">Куртка мужская с мех. ворот. т-серая с красным и СОП (ЧЗ) тк. Гретта</span></div><div class="cbtn" onclick="show(7)"><span class="l">Куртка -2 мужская с мех. ворот. синий с васильк. и СОП 50 мм тк. Гретта (ЧЗ)</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/112768.jpg" loading="lazy"><span class="l">Куртка зим. муж. с капюш. т-син. с васильк. (ЧЗ) тк. Оксфорд</span></div></div>
+<div class="desc">ГОСТ 12.4.303-2016, ТР ТС 019/2011
+
+Куртка удлинённая, на утеплённой подкладке, с воротником стойка, внутренний воротник меховой, с центральной застёжкой на молнию до края воротника, которая закрыта ветрозащитной планкой, со съёмным капюшоном. Куртка с нижними накладными карманами с клапаном и с карманом на левой стороне подкладки. По талии куртки кулиска для регулирования объема. В куртке предусмотрена светоотражающая полоса 50мм для обозначения сигнальной видимости.
+ 
+Материал верха основной: ткань полиэфирная с пропиткой ВО, пл.105 г/м2 состав 100% ПЭ, Цвет: тёмно-серый 
+Материал верха отде</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr class="sel"><td>139151</td><td>Куртка зим. муж. с капюшоном т-серая с красным тк.Оксфорд (ЧЗ)</td></tr><tr><td>116213</td><td>Куртка зим. муж. с капюшоном т-синяя с неоновым (ЧЗ) тк. Оксфорд (распродажа)</td></tr><tr><td>155140</td><td>Куртка зим. муж. с капюшоном хаки с черным и СОП 50 мм. тк. Оксфорд (ЧЗ)</td></tr><tr><td>153813</td><td>Куртка зим. муж. с мех. ворот. и кап. т-син. с СОП 50мм (600 гр) тк.Оксфорд (ЧЗ)</td></tr><tr><td>158724</td><td>Куртка зим. муж. с мех. ворот. и капюш. т-син. с СОП 50мм тк.(600 гр) Гретта (ЧЗ)</td></tr><tr><td>1861</td><td>Куртка мужская с мех. ворот. синий с васильк. и СОП (ЧЗ) тк. Гретта</td></tr><tr><td>139205</td><td>Куртка мужская с мех. ворот. т-серая с красным и СОП (ЧЗ) тк. Гретта</td></tr><tr><td>154849</td><td>Куртка -2 мужская с мех. ворот. синий с васильк. и СОП 50 мм тк. Гретта (ЧЗ)</td></tr><tr><td>112768</td><td>Куртка зим. муж. с капюш. т-син. с васильк. (ЧЗ) тк. Оксфорд</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "139151", "var_": "Куртка зим. муж. с капюшоном т-серая с красным тк.Оксфорд (ЧЗ)", "imgs": ["139151.jpg", "139151-1.jpg", "139151-2.jpg", "139151-3.jpg"]}, {"art": "116213", "var_": "Куртка зим. муж. с капюшоном т-синяя с неоновым (ЧЗ) тк. Оксфорд (распродажа)", "imgs": ["116213.jpg"]}, {"art": "155140", "var_": "Куртка зим. муж. с капюшоном хаки с черным и СОП 50 мм. тк. Оксфорд (ЧЗ)", "imgs": ["155140.jpg"]}, {"art": "153813", "var_": "Куртка зим. муж. с мех. ворот. и кап. т-син. с СОП 50мм (600 гр) тк.Оксфорд (ЧЗ)", "imgs": ["153813.jpg"]}, {"art": "158724", "var_": "Куртка зим. муж. с мех. ворот. и капюш. т-син. с СОП 50мм тк.(600 гр) Гретта (ЧЗ)", "imgs": ["158724.jpg"]}, {"art": "1861", "var_": "Куртка мужская с мех. ворот. синий с васильк. и СОП (ЧЗ) тк. Гретта", "imgs": []}, {"art": "139205", "var_": "Куртка мужская с мех. ворот. т-серая с красным и СОП (ЧЗ) тк. Гретта", "imgs": ["139205.jpg", "139205-1.jpg", "139205-2.jpg", "139205-3.jpg"]}, {"art": "154849", "var_": "Куртка -2 мужская с мех. ворот. синий с васильк. и СОП 50 мм тк. Гретта (ЧЗ)", "imgs": []}, {"art": "112768", "var_": "Куртка зим. муж. с капюш. т-син. с васильк. (ЧЗ) тк. Оксфорд", "imgs": ["112768.jpg", "112768-1.jpg", "112768-2.jpg", "112768-3.jpg", "112768-4.jpg"]}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

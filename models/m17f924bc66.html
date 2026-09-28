@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Костюм «Стан»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Сигнальная одежда • Зимняя одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/114401.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/114401.jpg" class="sel" onclick="setMain(this,'../photos_all/114401.jpg')"></div></div>
+<div><h1>Костюм «Стан»</h1><div class="art" id="vartitle">Арт. 114401 — Костюм : куртка , бр, оливковый с черной и красной отделкой</div>
+<div class="colors"><div class="cbtn" onclick="show(0)"><span class="l">Костюм : куртка кор., полукомб. васильковый с красной и черной отд. (ЧЗ)</span></div><div class="cbtn sel" onclick="show(1)"><img src="../photos_all/114401.jpg" loading="lazy"><span class="l">Костюм : куртка , бр, оливковый с черной и красной отделкой</span></div><div class="cbtn" onclick="show(2)"><img src="../photos_all/162822.jpg" loading="lazy"><span class="l">Костюм : куртка , брюки, синий со средне-серым и лимонной отделкой</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/113913.jpg" loading="lazy"><span class="l">Костюм : куртка , п/к, оливковый с черной и красной отделкой</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/108117.jpg" loading="lazy"><span class="l">Костюм : куртка , п/к, ср.серый с черной и красной отделкой</span></div><div class="cbtn" onclick="show(5)"><img src="../photos_all/161631.jpg" loading="lazy"><span class="l">Костюм : куртка , п/к, синий со средне-серым и лимонной отделкой</span></div><div class="cbtn" onclick="show(6)"><img src="../photos_all/102733.jpg" loading="lazy"><span class="l">Костюм куртка кор., полукомбинезон синий со средне-серым и лимонным (ЧЗ)</span></div><div class="cbtn" onclick="show(7)"><img src="../photos_all/123453.jpg" loading="lazy"><span class="l">Костюм зимний: куртка, п/к васильковый с черным и красным (ЧЗ)</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/128328.jpg" loading="lazy"><span class="l">Костюм зимний: куртка, п/к, красный с черным и лимонной отделкой (ЧЗ)</span></div><div class="cbtn" onclick="show(9)"><img src="../photos_all/103421.jpg" loading="lazy"><span class="l">Костюм зимний: куртка, п/к, средне-серый с черной и красной отделкой тк. Родос (ЧЗ)</span></div></div>
+<div class="desc">Куртка прямого силуэта, короткая, с воротником стойка, с центральной застёжкой на молнию, накрытую ветрозащитным клапаном, застёгивающимся на кнопку и липучки, с подрезными бочками, с верхними фигурными карманами с фигурными клапанами на липучках, с нижними карманами в швах, с притачным поясом регулирующимся по ширине при помощи хлястиков и кнопок. Рукава с манжетами на кнопках. 
+Полукомбинезон с застёжкой гульфика и застёжкой в правом боковом шве на пуговицы, верхним накладным карманом и нижними внутренними боковыми карманами, с наколенниками, с накладным карманом на левом боковом шве с клапа</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr><td>2980</td><td>Костюм : куртка кор., полукомб. васильковый с красной и черной отд. (ЧЗ)</td></tr><tr class="sel"><td>114401</td><td>Костюм : куртка , бр, оливковый с черной и красной отделкой</td></tr><tr><td>162822</td><td>Костюм : куртка , брюки, синий со средне-серым и лимонной отделкой</td></tr><tr><td>113913</td><td>Костюм : куртка , п/к, оливковый с черной и красной отделкой</td></tr><tr><td>108117</td><td>Костюм : куртка , п/к, ср.серый с черной и красной отделкой</td></tr><tr><td>161631</td><td>Костюм : куртка , п/к, синий со средне-серым и лимонной отделкой</td></tr><tr><td>102733</td><td>Костюм куртка кор., полукомбинезон синий со средне-серым и лимонным (ЧЗ)</td></tr><tr><td>123453</td><td>Костюм зимний: куртка, п/к васильковый с черным и красным (ЧЗ)</td></tr><tr><td>128328</td><td>Костюм зимний: куртка, п/к, красный с черным и лимонной отделкой (ЧЗ)</td></tr><tr><td>103421</td><td>Костюм зимний: куртка, п/к, средне-серый с черной и красной отделкой тк. Родос (ЧЗ)</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "2980", "var_": "Костюм : куртка кор., полукомб. васильковый с красной и черной отд. (ЧЗ)", "imgs": []}, {"art": "114401", "var_": "Костюм : куртка , бр, оливковый с черной и красной отделкой", "imgs": ["114401.jpg"]}, {"art": "162822", "var_": "Костюм : куртка , брюки, синий со средне-серым и лимонной отделкой", "imgs": ["162822.jpg"]}, {"art": "113913", "var_": "Костюм : куртка , п/к, оливковый с черной и красной отделкой", "imgs": ["113913.jpg"]}, {"art": "108117", "var_": "Костюм : куртка , п/к, ср.серый с черной и красной отделкой", "imgs": ["108117.jpg", "108117-1.jpg", "108117-2.jpg", "108117-3.jpg", "108117-4.jpg", "108117-5.jpg", "108117-6.jpg", "108117-7.jpg", "108117-8.jpg", "108117-9.jpg"]}, {"art": "161631", "var_": "Костюм : куртка , п/к, синий со средне-серым и лимонной отделкой", "imgs": ["161631.jpg"]}, {"art": "102733", "var_": "Костюм куртка кор., полукомбинезон синий со средне-серым и лимонным (ЧЗ)", "imgs": ["102733.jpg", "102733-1.jpg", "102733-2.jpg", "102733-3.jpg", "102733-4.jpg", "102733-5.jpg", "102733-6.jpg"]}, {"art": "123453", "var_": "Костюм зимний: куртка, п/к васильковый с черным и красным (ЧЗ)", "imgs": ["123453.jpg", "123453-1.jpg", "123453-2.jpg", "123453-3.jpg", "123453-4.jpg", "123453-5.jpg", "123453-6.jpg", "123453-7.jpg"]}, {"art": "128328", "var_": "Костюм зимний: куртка, п/к, красный с черным и лимонной отделкой (ЧЗ)", "imgs": ["128328.jpg", "128328-1.jpg", "128328-2.jpg", "128328-3.jpg", "128328-4.jpg", "128328-5.jpg", "128328-6.jpg", "128328-7.jpg", "128328-8.jpg"]}, {"art": "103421", "var_": "Костюм зимний: куртка, п/к, средне-серый с черной и красной отделкой тк. Родос (ЧЗ)", "imgs": ["103421.jpg", "103421-1.jpg", "103421-2.jpg", "103421-3.jpg", "103421-4.jpg", "103421-5.jpg"]}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Полукомбинезон «Профессионал»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Рабочая одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/100223.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/100223.jpg" class="sel" onclick="setMain(this,'../photos_all/100223.jpg')"><img src="../photos_all/100223-1.jpg" class="" onclick="setMain(this,'../photos_all/100223-1.jpg')"><img src="../photos_all/100223-2.jpg" class="" onclick="setMain(this,'../photos_all/100223-2.jpg')"><img src="../photos_all/100223-3.jpg" class="" onclick="setMain(this,'../photos_all/100223-3.jpg')"></div></div>
+<div><h1>Полукомбинезон «Профессионал»</h1><div class="art" id="vartitle">Арт. 100223 — Полукомбинезон черный (ЧЗ)</div>
+<div class="colors"><div class="cbtn" onclick="show(0)"><span class="l">Полукомбинезон васильковый (ЧЗ)</span></div><div class="cbtn" onclick="show(1)"><span class="l">Полукомбинезон светло-серый (ЧЗ)</span></div><div class="cbtn" onclick="show(2)"><span class="l">Полукомбинезон синий (ЧЗ)</span></div><div class="cbtn" onclick="show(3)"><span class="l">Полукомбинезон темно-серый (ЧЗ)</span></div><div class="cbtn sel" onclick="show(4)"><img src="../photos_all/100223.jpg" loading="lazy"><span class="l">Полукомбинезон черный (ЧЗ)</span></div></div>
+<div class="desc">ГОСТ 12.4.280-2014, ТР ТС 019/2011
+Полукомбинезон с застежками на пуговицы: спереди на гульфик и в правом боковом шве. С различными карманами на передних и задних половинках. С двойным нагрудным карманом с клапаном на липучке. Сзади полукомбинезон по талии стянут резинкой для лучшего прилегания по фигуре. Бретели выполнены из резинки, длина бретелей регулируется при помощи застежек-фастексов.
+
+Полукомбинезон предназначен для защиты от общих производственных загрязнений и механических воздействий работников различных отраслей промышленности, агропромышленного комплекса, жилищно-коммунального хо</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr><td>2495</td><td>Полукомбинезон васильковый (ЧЗ)</td></tr><tr><td>4365</td><td>Полукомбинезон светло-серый (ЧЗ)</td></tr><tr><td>2499</td><td>Полукомбинезон синий (ЧЗ)</td></tr><tr><td>2290</td><td>Полукомбинезон темно-серый (ЧЗ)</td></tr><tr class="sel"><td>100223</td><td>Полукомбинезон черный (ЧЗ)</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "2495", "var_": "Полукомбинезон васильковый (ЧЗ)", "imgs": []}, {"art": "4365", "var_": "Полукомбинезон светло-серый (ЧЗ)", "imgs": []}, {"art": "2499", "var_": "Полукомбинезон синий (ЧЗ)", "imgs": []}, {"art": "2290", "var_": "Полукомбинезон темно-серый (ЧЗ)", "imgs": []}, {"art": "100223", "var_": "Полукомбинезон черный (ЧЗ)", "imgs": ["100223.jpg", "100223-1.jpg", "100223-2.jpg", "100223-3.jpg"]}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

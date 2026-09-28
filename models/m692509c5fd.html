@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Куртка «Прага-Люкс»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Активный отдых • Рабочая одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/104944.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/104944.jpg" class="sel" onclick="setMain(this,'../photos_all/104944.jpg')"><img src="../photos_all/104944-1.jpg" class="" onclick="setMain(this,'../photos_all/104944-1.jpg')"></div></div>
+<div><h1>Куртка «Прага-Люкс»</h1><div class="art" id="vartitle">Арт. 104944 — Куртка женская зимняя: светло-серая (ЧЗ) тк.Дюспо</div>
+<div class="colors"><div class="cbtn sel" onclick="show(0)"><img src="../photos_all/104944.jpg" loading="lazy"><span class="l">Куртка женская зимняя: светло-серая (ЧЗ) тк.Дюспо</span></div><div class="cbtn" onclick="show(1)"><img src="../photos_all/104946.jpg" loading="lazy"><span class="l">Куртка женская, оливковая (ЧЗ) тк.Дюспо</span></div><div class="cbtn" onclick="show(2)"><span class="l">Куртка муж., т.серый /&quot;Баклажан&quot; (подкладка кр. флис) (ЧЗ) тк.Дюспо (распродажа)</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/102351.jpg" loading="lazy"><span class="l">Куртка мужская, зеленое яблоко (подкладка оранж. флис) (ЧЗ) тк.Дюспо (распродажа)</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/121399.jpg" loading="lazy"><span class="l">Куртка мужская, короткая с капюшоном, черная тк.Дюспо (ЧЗ)</span></div><div class="cbtn" onclick="show(5)"><span class="l">Куртка мужская, с капюшоном, темно-синяя (ЧЗ) тк.Дюспо</span></div><div class="cbtn" onclick="show(6)"><span class="l">Куртка мужская, с капюшоном. красная с черным (ЧЗ) тк.Дюспо (распродажа)</span></div><div class="cbtn" onclick="show(7)"><span class="l">Куртка мужская, сине-серая (подкладка бежевый флис) (ЧЗ) тк.Дюспо (распродажа)</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/103051.jpg" loading="lazy"><span class="l">Куртка удлиненная с капюшоном, черный (ЧЗ) тк.Дюспо</span></div><div class="cbtn" onclick="show(9)"><img src="../photos_all/102554.jpg" loading="lazy"><span class="l">Куртка мужская с капюшоном, оливковая (ЧЗ) тк.Дюспо</span></div><div class="cbtn" onclick="show(10)"><img src="../photos_all/159728.jpg" loading="lazy"><span class="l">Куртка мужская с капюшоном, т.серая (&quot;Баклажан&quot;) (ЧЗ) тк.Дюспо</span></div><div class="cbtn" onclick="show(11)"><span class="l">Куртка мужская, серая (подкладка молочный флис) (ЧЗ) (распродажа)</span></div></div>
+<div class="desc">Куртка утеплённая стёганая, на подкладке &quot;флис&quot;, со съёмным капюшоном, прямого силуэта, центральной застёжкой на тесьму &quot;молния&quot;, воротником &quot;стойка&quot;, верхним прорезным и нижними карманами с листочкой, рукава втачные с притачными манжетами, манжеты частично стянуты эластичной лентой.Ткань верха: &quot;Дюспо&quot;, с ВО пропиткой, состав: 100% п/э, плотность 75 гр/м2, Цвет: стальной (светло серый) Ткань подкладочная: &quot;Флис&quot; пл.180 гр/м2, состав: 100% п/э. Утеплитель: &quot;Синтепон&quot; пл. 150 гр/м2 один слой.</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr class="sel"><td>104944</td><td>Куртка женская зимняя: светло-серая (ЧЗ) тк.Дюспо</td></tr><tr><td>104946</td><td>Куртка женская, оливковая (ЧЗ) тк.Дюспо</td></tr><tr><td>104043</td><td>Куртка муж., т.серый /&quot;Баклажан&quot; (подкладка кр. флис) (ЧЗ) тк.Дюспо (распродажа)</td></tr><tr><td>102351</td><td>Куртка мужская, зеленое яблоко (подкладка оранж. флис) (ЧЗ) тк.Дюспо (распродажа)</td></tr><tr><td>121399</td><td>Куртка мужская, короткая с капюшоном, черная тк.Дюспо (ЧЗ)</td></tr><tr><td>414</td><td>Куртка мужская, с капюшоном, темно-синяя (ЧЗ) тк.Дюспо</td></tr><tr><td>128213</td><td>Куртка мужская, с капюшоном. красная с черным (ЧЗ) тк.Дюспо (распродажа)</td></tr><tr><td>4268</td><td>Куртка мужская, сине-серая (подкладка бежевый флис) (ЧЗ) тк.Дюспо (распродажа)</td></tr><tr><td>103051</td><td>Куртка удлиненная с капюшоном, черный (ЧЗ) тк.Дюспо</td></tr><tr><td>102554</td><td>Куртка мужская с капюшоном, оливковая (ЧЗ) тк.Дюспо</td></tr><tr><td>159728</td><td>Куртка мужская с капюшоном, т.серая (&quot;Баклажан&quot;) (ЧЗ) тк.Дюспо</td></tr><tr><td>119013</td><td>Куртка мужская, серая (подкладка молочный флис) (ЧЗ) (распродажа)</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "104944", "var_": "Куртка женская зимняя: светло-серая (ЧЗ) тк.Дюспо", "imgs": ["104944.jpg", "104944-1.jpg"]}, {"art": "104946", "var_": "Куртка женская, оливковая (ЧЗ) тк.Дюспо", "imgs": ["104946.jpg", "104946-1.jpg", "104946-2.jpg"]}, {"art": "104043", "var_": "Куртка муж., т.серый /\"Баклажан\" (подкладка кр. флис) (ЧЗ) тк.Дюспо (распродажа)", "imgs": []}, {"art": "102351", "var_": "Куртка мужская, зеленое яблоко (подкладка оранж. флис) (ЧЗ) тк.Дюспо (распродажа)", "imgs": ["102351.jpg", "102351-1.jpg", "102351-2.jpg", "102351-3.jpg"]}, {"art": "121399", "var_": "Куртка мужская, короткая с капюшоном, черная тк.Дюспо (ЧЗ)", "imgs": ["121399.jpg", "121399-1.jpg", "121399-2.jpg", "121399-3.jpg", "121399-4.jpg"]}, {"art": "414", "var_": "Куртка мужская, с капюшоном, темно-синяя (ЧЗ) тк.Дюспо", "imgs": []}, {"art": "128213", "var_": "Куртка мужская, с капюшоном. красная с черным (ЧЗ) тк.Дюспо (распродажа)", "imgs": []}, {"art": "4268", "var_": "Куртка мужская, сине-серая (подкладка бежевый флис) (ЧЗ) тк.Дюспо (распродажа)", "imgs": []}, {"art": "103051", "var_": "Куртка удлиненная с капюшоном, черный (ЧЗ) тк.Дюспо", "imgs": ["103051.jpg", "103051-1.jpg", "103051-2.jpg", "103051-3.jpg", "103051-4.jpg"]}, {"art": "102554", "var_": "Куртка мужская с капюшоном, оливковая (ЧЗ) тк.Дюспо", "imgs": ["102554.jpg", "102554-1.jpg", "102554-2.jpg", "102554-3.jpg"]}, {"art": "159728", "var_": "Куртка мужская с капюшоном, т.серая (\"Баклажан\") (ЧЗ) тк.Дюспо", "imgs": ["159728.jpg", "159728-1.jpg", "159728-2.jpg", "159728-3.jpg"]}, {"art": "119013", "var_": "Куртка мужская, серая (подкладка молочный флис) (ЧЗ) (распродажа)", "imgs": []}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

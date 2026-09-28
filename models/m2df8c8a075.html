@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Кепка- «Бейсболка»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Рабочая одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/130177.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/130177.jpg" class="sel" onclick="setMain(this,'../photos_all/130177.jpg')"><img src="../photos_all/130177-1.jpg" class="" onclick="setMain(this,'../photos_all/130177-1.jpg')"><img src="../photos_all/130177-2.jpg" class="" onclick="setMain(this,'../photos_all/130177-2.jpg')"></div></div>
+<div><h1>Кепка- «Бейсболка»</h1><div class="art" id="vartitle">Арт. 130177 — Кепка- КМФ Памир (ЧЗ)</div>
+<div class="colors"><div class="cbtn sel" onclick="show(0)"><img src="../photos_all/130177.jpg" loading="lazy"><span class="l">Кепка- КМФ Памир (ЧЗ)</span></div><div class="cbtn" onclick="show(1)"><img src="../photos_all/128558.jpg" loading="lazy"><span class="l">Кепка- КМФ Пиксель (ЧЗ)</span></div><div class="cbtn" onclick="show(2)"><img src="../photos_all/130176.jpg" loading="lazy"><span class="l">Кепка- КМФ Питон (ЧЗ)</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/130175.jpg" loading="lazy"><span class="l">Кепка- КМФ Пустыня (ЧЗ)</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/130178.jpg" loading="lazy"><span class="l">Кепка- КМФ Степь (ЧЗ)</span></div><div class="cbtn" onclick="show(5)"><img src="../photos_all/100446.jpg" loading="lazy"><span class="l">Кепка- бежевая с черным козырьком (тк.PANACOTTA) (ЧЗ)</span></div><div class="cbtn" onclick="show(6)"><img src="../photos_all/133542.jpg" loading="lazy"><span class="l">Кепка- красная с т. серым (ЧЗ)</span></div><div class="cbtn" onclick="show(7)"><img src="../photos_all/100448.jpg" loading="lazy"><span class="l">Кепка- св.оливковая с темно-оливковым козырьком (тк.PANACOTTA) (ЧЗ)</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/133543.jpg" loading="lazy"><span class="l">Кепка- светло-серая с васильковым (ЧЗ)</span></div><div class="cbtn" onclick="show(9)"><img src="../photos_all/133544.jpg" loading="lazy"><span class="l">Кепка- синяя с черным (ЧЗ)</span></div><div class="cbtn" onclick="show(10)"><img src="../photos_all/128557.jpg" loading="lazy"><span class="l">Кепка- хаки (ЧЗ)</span></div></div>
+<div class="desc">КЕПКА-БЕЙСБОЛКА состоит из передней части, клина бокового, клин заднего, козырька, и обтачки из ткани «Бязь». Передняя часть бейсболки с выточкой проклеивается дублерином. Задняя часть бейсболки регулируется защелкой (пластик).
+Нижний край бейсболки обрабатывается обтачкой из ткани «Бязь». Обтачка из ткани «Бязь» проклеивается флизелином.</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr class="sel"><td>130177</td><td>Кепка- КМФ Памир (ЧЗ)</td></tr><tr><td>128558</td><td>Кепка- КМФ Пиксель (ЧЗ)</td></tr><tr><td>130176</td><td>Кепка- КМФ Питон (ЧЗ)</td></tr><tr><td>130175</td><td>Кепка- КМФ Пустыня (ЧЗ)</td></tr><tr><td>130178</td><td>Кепка- КМФ Степь (ЧЗ)</td></tr><tr><td>100446</td><td>Кепка- бежевая с черным козырьком (тк.PANACOTTA) (ЧЗ)</td></tr><tr><td>133542</td><td>Кепка- красная с т. серым (ЧЗ)</td></tr><tr><td>100448</td><td>Кепка- св.оливковая с темно-оливковым козырьком (тк.PANACOTTA) (ЧЗ)</td></tr><tr><td>133543</td><td>Кепка- светло-серая с васильковым (ЧЗ)</td></tr><tr><td>133544</td><td>Кепка- синяя с черным (ЧЗ)</td></tr><tr><td>128557</td><td>Кепка- хаки (ЧЗ)</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "130177", "var_": "Кепка- КМФ Памир (ЧЗ)", "imgs": ["130177.jpg", "130177-1.jpg", "130177-2.jpg"]}, {"art": "128558", "var_": "Кепка- КМФ Пиксель (ЧЗ)", "imgs": ["128558.jpg", "128558-1.jpg"]}, {"art": "130176", "var_": "Кепка- КМФ Питон (ЧЗ)", "imgs": ["130176.jpg", "130176-1.jpg", "130176-2.jpg"]}, {"art": "130175", "var_": "Кепка- КМФ Пустыня (ЧЗ)", "imgs": ["130175.jpg", "130175-1.jpg", "130175-2.jpg"]}, {"art": "130178", "var_": "Кепка- КМФ Степь (ЧЗ)", "imgs": ["130178.jpg", "130178-1.jpg", "130178-2.jpg"]}, {"art": "100446", "var_": "Кепка- бежевая с черным козырьком (тк.PANACOTTA) (ЧЗ)", "imgs": ["100446.jpg", "100446-1.jpg"]}, {"art": "133542", "var_": "Кепка- красная с т. серым (ЧЗ)", "imgs": ["133542.jpg", "133542-1.jpg", "133542-2.jpg"]}, {"art": "100448", "var_": "Кепка- св.оливковая с темно-оливковым козырьком (тк.PANACOTTA) (ЧЗ)", "imgs": ["100448.jpg", "100448-1.jpg"]}, {"art": "133543", "var_": "Кепка- светло-серая с васильковым (ЧЗ)", "imgs": ["133543.jpg", "133543-1.jpg", "133543-2.jpg"]}, {"art": "133544", "var_": "Кепка- синяя с черным (ЧЗ)", "imgs": ["133544.jpg", "133544-1.jpg", "133544-2.jpg"]}, {"art": "128557", "var_": "Кепка- хаки (ЧЗ)", "imgs": ["128557.jpg", "128557-1.jpg", "128557-2.jpg"]}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>

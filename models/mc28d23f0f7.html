@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Костюм «Манхеттен»</title>
+<link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#eef1f5;color:#222}
+header{background:#1f4e79;color:#fff;padding:12px 20px;display:flex;gap:16px;align-items:center}
+header a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+header a:hover{opacity:1;text-decoration:underline}
+.wrap{max-width:1100px;margin:16px auto 40px;padding:0 16px}
+.mpage{display:grid;grid-template-columns:minmax(300px,460px) 1fr;gap:26px;background:#fff;border-radius:14px;padding:22px}
+@media(max-width:820px){.mpage{grid-template-columns:1fr}}
+.main img{width:100%;max-height:560px;object-fit:contain;background:#fff;border:1px solid #e4e8ee;border-radius:10px;cursor:zoom-in}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.thumbs img{width:72px;height:108px;object-fit:contain;border:2px solid #e4e8ee;border-radius:8px;cursor:pointer;background:#fff}
+.thumbs img.sel{border-color:#1f4e79}
+h1{font-size:22px;margin:0 0 4px}
+.art{color:#8a97a5;font-size:13px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.cbtn{border:2px solid #e4e8ee;border-radius:10px;padding:6px;cursor:pointer;background:#fff;text-align:center;width:86px}
+.cbtn img{width:78px;height:100px;object-fit:contain}
+.cbtn .l{font-size:10px;color:#555;line-height:1.2;display:block;margin-top:2px}
+.cbtn.sel{border-color:#1f4e79;box-shadow:0 0 0 2px #1f4e7933}
+.desc{margin:14px 0;font-size:14px;line-height:1.55;color:#3c4a5a;white-space:pre-line}
+table.vt{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+table.vt th{background:#1f4e79;color:#fff;padding:8px 10px;text-align:left}
+table.vt td{padding:7px 10px;border-bottom:1px solid #e4e8ee}
+#viewer{position:fixed;inset:0;background:rgba(10,15,25,.9);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#viewer img{max-width:94vw;max-height:94vh;border-radius:6px}
+.empty{padding:40px;text-align:center;color:#8a97a5}
+</style></head><body>
+<header><a href="../index.html">← Назад в каталог</a><span>Рабочая одежда • Сигнальная одежда • Зимняя одежда</span></header>
+<div class="wrap"><div class="mpage">
+<div><div class="main"><img id="mainimg" src="../photos_all/108153.jpg" onclick="zoom(this.src)"></div><div class="thumbs" id="thumbs"><img src="../photos_all/108153.jpg" class="sel" onclick="setMain(this,'../photos_all/108153.jpg')"><img src="../photos_all/108153-1.jpg" class="" onclick="setMain(this,'../photos_all/108153-1.jpg')"><img src="../photos_all/108153-2.jpg" class="" onclick="setMain(this,'../photos_all/108153-2.jpg')"><img src="../photos_all/108153-3.jpg" class="" onclick="setMain(this,'../photos_all/108153-3.jpg')"><img src="../photos_all/108153-4.jpg" class="" onclick="setMain(this,'../photos_all/108153-4.jpg')"><img src="../photos_all/108153-5.jpg" class="" onclick="setMain(this,'../photos_all/108153-5.jpg')"><img src="../photos_all/108153-6.jpg" class="" onclick="setMain(this,'../photos_all/108153-6.jpg')"><img src="../photos_all/108153-7.jpg" class="" onclick="setMain(this,'../photos_all/108153-7.jpg')"></div></div>
+<div><h1>Костюм «Манхеттен»</h1><div class="art" id="vartitle">Арт. 108153 — Костюм : брюки, жилет песочный с оранжевым и черным</div>
+<div class="colors"><div class="cbtn sel" onclick="show(0)"><img src="../photos_all/108153.jpg" loading="lazy"><span class="l">Костюм : брюки, жилет песочный с оранжевым и черным</span></div><div class="cbtn" onclick="show(1)"><img src="../photos_all/115877.jpg" loading="lazy"><span class="l">Костюм : длинная куртка, брюки, оливк. с оранжевым и черным (ЧЗ) тк. Галактика</span></div><div class="cbtn" onclick="show(2)"><img src="../photos_all/108046.jpg" loading="lazy"><span class="l">Костюм : длинная куртка, брюки, т.серый с оранжевым и черным (ЧЗ) тк. Галактика</span></div><div class="cbtn" onclick="show(3)"><img src="../photos_all/115874.jpg" loading="lazy"><span class="l">Костюм : длинная куртка, п/к, оливковый с оранжевым и черным</span></div><div class="cbtn" onclick="show(4)"><img src="../photos_all/108052.jpg" loading="lazy"><span class="l">Костюм : длинная куртка, п/к, т.серый с оранжевым и черным</span></div><div class="cbtn" onclick="show(5)"><img src="../photos_all/108054.jpg" loading="lazy"><span class="l">Костюм : короткая куртка, брюки, т.серый с оранжевым и черным</span></div><div class="cbtn" onclick="show(6)"><img src="../photos_all/108056.jpg" loading="lazy"><span class="l">Костюм : короткая куртка, п/к, т.серый с оранжевым и черным (ЧЗ) тк. Галактика</span></div><div class="cbtn" onclick="show(7)"><img src="../photos_all/115883.jpg" loading="lazy"><span class="l">Костюм : короткая куртка, брюки, оливковый с оранжевым и черным</span></div><div class="cbtn" onclick="show(8)"><img src="../photos_all/108151.jpg" loading="lazy"><span class="l">Костюм : короткая куртка, брюки, песочный с оранжевым и черным</span></div><div class="cbtn" onclick="show(9)"><img src="../photos_all/115880.jpg" loading="lazy"><span class="l">Костюм : короткая куртка, п/к, оливковый с оранжевым и черным (ЧЗ) тк. Галактика</span></div><div class="cbtn" onclick="show(10)"><img src="../photos_all/108149.jpg" loading="lazy"><span class="l">Костюм : короткая куртка, п/к, песочный с оранжевым и черным (ЧЗ) тк. Галактика</span></div><div class="cbtn" onclick="show(11)"><img src="../photos_all/157901.jpg" loading="lazy"><span class="l">Костюм -М зим куртка дл,брюки т-синий с черным и кирпич. отд.,тк.Орион-мембрана (ЧЗ)</span></div></div>
+<div class="desc">Костюм состоит из арт.104014 и арт.104012
+
+арт.104014 Жилет &quot;СИРИУС-МАНХЕТТЕН&quot;
+Жилет с застежкой на тесьму - &quot;молния&quot;; с верхними, средними и нижними многофункциональными объемными карманами с клапанами, с кантом из отделочной ткани. В жилете вшиваются паты из ленты ранцевой с рефлектором 25/10 СВМ.
+
+арт.104012 Брюки &quot;СИРИУС-МАНХЕТТЕН&quot;
+Брюки с застёжкой гульфика на молнию, с поясом на резинке, со шлевками, с накладными боковыми объемными карманами, с объемными наколенниками, с накладным объемным карманом на боковом шве с клапаном на липучке, двумя объемными карманами с клапанами на задних поло</div>
+<table class="vt"><thead><tr><th>Артикул</th><th>Вариант / цвет</th></tr></thead><tbody><tr class="sel"><td>108153</td><td>Костюм : брюки, жилет песочный с оранжевым и черным</td></tr><tr><td>115877</td><td>Костюм : длинная куртка, брюки, оливк. с оранжевым и черным (ЧЗ) тк. Галактика</td></tr><tr><td>108046</td><td>Костюм : длинная куртка, брюки, т.серый с оранжевым и черным (ЧЗ) тк. Галактика</td></tr><tr><td>115874</td><td>Костюм : длинная куртка, п/к, оливковый с оранжевым и черным</td></tr><tr><td>108052</td><td>Костюм : длинная куртка, п/к, т.серый с оранжевым и черным</td></tr><tr><td>108054</td><td>Костюм : короткая куртка, брюки, т.серый с оранжевым и черным</td></tr><tr><td>108056</td><td>Костюм : короткая куртка, п/к, т.серый с оранжевым и черным (ЧЗ) тк. Галактика</td></tr><tr><td>115883</td><td>Костюм : короткая куртка, брюки, оливковый с оранжевым и черным</td></tr><tr><td>108151</td><td>Костюм : короткая куртка, брюки, песочный с оранжевым и черным</td></tr><tr><td>115880</td><td>Костюм : короткая куртка, п/к, оливковый с оранжевым и черным (ЧЗ) тк. Галактика</td></tr><tr><td>108149</td><td>Костюм : короткая куртка, п/к, песочный с оранжевым и черным (ЧЗ) тк. Галактика</td></tr><tr><td>157901</td><td>Костюм -М зим куртка дл,брюки т-синий с черным и кирпич. отд.,тк.Орион-мембрана (ЧЗ)</td></tr></tbody></table>
+</div></div></div>
+<div id="viewer" onclick="this.style.display='none'"><img id="vimg"></div>
+<script>const MODEL={"vars": [{"art": "108153", "var_": "Костюм : брюки, жилет песочный с оранжевым и черным", "imgs": ["108153.jpg", "108153-1.jpg", "108153-2.jpg", "108153-3.jpg", "108153-4.jpg", "108153-5.jpg", "108153-6.jpg", "108153-7.jpg"]}, {"art": "115877", "var_": "Костюм : длинная куртка, брюки, оливк. с оранжевым и черным (ЧЗ) тк. Галактика", "imgs": ["115877.jpg", "115877-1.jpg", "115877-2.jpg", "115877-3.jpg", "115877-4.jpg", "115877-5.jpg", "115877-6.jpg", "115877-7.jpg", "115877-8.jpg"]}, {"art": "108046", "var_": "Костюм : длинная куртка, брюки, т.серый с оранжевым и черным (ЧЗ) тк. Галактика", "imgs": ["108046.jpg", "108046-1.jpg", "108046-2.jpg", "108046-3.jpg", "108046-4.jpg", "108046-5.jpg"]}, {"art": "115874", "var_": "Костюм : длинная куртка, п/к, оливковый с оранжевым и черным", "imgs": ["115874.jpg", "115874-1.jpg", "115874-2.jpg", "115874-3.jpg", "115874-4.jpg", "115874-5.jpg", "115874-6.jpg", "115874-7.jpg", "115874-8.jpg", "115874-9.jpg"]}, {"art": "108052", "var_": "Костюм : длинная куртка, п/к, т.серый с оранжевым и черным", "imgs": ["108052.jpg", "108052-1.jpg", "108052-2.jpg", "108052-3.jpg", "108052-4.jpg", "108052-5.jpg"]}, {"art": "108054", "var_": "Костюм : короткая куртка, брюки, т.серый с оранжевым и черным", "imgs": ["108054.jpg", "108054-1.jpg", "108054-2.jpg", "108054-3.jpg", "108054-4.jpg", "108054-5.jpg", "108054-6.jpg", "108054-7.jpg"]}, {"art": "108056", "var_": "Костюм : короткая куртка, п/к, т.серый с оранжевым и черным (ЧЗ) тк. Галактика", "imgs": ["108056.jpg", "108056-1.jpg", "108056-2.jpg", "108056-3.jpg", "108056-4.jpg", "108056-5.jpg", "108056-6.jpg", "108056-7.jpg", "108056-8.jpg"]}, {"art": "115883", "var_": "Костюм : короткая куртка, брюки, оливковый с оранжевым и черным", "imgs": ["115883.jpg", "115883-1.jpg", "115883-2.jpg", "115883-3.jpg", "115883-4.jpg", "115883-5.jpg", "115883-6.jpg", "115883-7.jpg", "115883-8.jpg", "115883-9.jpg", "115883-10.jpg"]}, {"art": "108151", "var_": "Костюм : короткая куртка, брюки, песочный с оранжевым и черным", "imgs": ["108151.jpg", "108151-1.jpg", "108151-2.jpg", "108151-3.jpg", "108151-4.jpg", "108151-5.jpg", "108151-6.jpg", "108151-7.jpg"]}, {"art": "115880", "var_": "Костюм : короткая куртка, п/к, оливковый с оранжевым и черным (ЧЗ) тк. Галактика", "imgs": ["115880.jpg", "115880-1.jpg", "115880-2.jpg", "115880-3.jpg", "115880-4.jpg", "115880-5.jpg", "115880-6.jpg", "115880-7.jpg", "115880-8.jpg"]}, {"art": "108149", "var_": "Костюм : короткая куртка, п/к, песочный с оранжевым и черным (ЧЗ) тк. Галактика", "imgs": ["108149.jpg", "108149-1.jpg", "108149-2.jpg", "108149-3.jpg", "108149-4.jpg", "108149-5.jpg", "108149-6.jpg", "108149-7.jpg", "108149-8.jpg"]}, {"art": "157901", "var_": "Костюм -М зим куртка дл,брюки т-синий с черным и кирпич. отд.,тк.Орион-мембрана (ЧЗ)", "imgs": ["157901.jpg"]}]};</script><script>
+function src(f){return f.startsWith('../')?f:'../photos_all/'+f;}
+function show(i){
+  const V=MODEL.vars[i];
+  document.getElementById('vartitle').textContent='Арт. '+V.art+' — '+V.var_;
+  const main=document.getElementById('mainimg');
+  if(V.imgs.length){main.src=src(V.imgs[0]);main.parentElement.style.display='';}
+  else{main.parentElement.style.display='none';}
+  document.getElementById('thumbs').innerHTML=V.imgs.map((f,k)=>
+    `<img src="${src(f)}" class="${k==0?'sel':''}" onclick="setMain(this,'${src(f)}')">`).join('');
+  document.querySelectorAll('.cbtn').forEach((b,k)=>b.classList.toggle('sel',k==i));
+  document.querySelectorAll('table.vt tbody tr').forEach((t,k)=>t.classList.toggle('sel',k==i));
+}
+function setMain(el,s){document.getElementById('mainimg').src=s;
+  document.querySelectorAll('.thumbs img').forEach(t=>t.classList.remove('sel'));el.classList.add('sel');}
+function zoom(s){document.getElementById('vimg').src=s;document.getElementById('viewer').style.display='flex';}
+</script>
+</body></html>
